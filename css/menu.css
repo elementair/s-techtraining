@@ -1,0 +1,124 @@
+@font-face {
+    font-family: klavika_light;
+    src: url(../font/klavika_light.otf);
+}
+
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: klavika_light !important;
+  position: relative;
+}
+
+
+
+#navbar {
+  font-family: klavika_light;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 15px 0px!important;
+  transition: 0.4s;
+  padding-bottom: 25px!important;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: #808080;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 30px;
+
+}
+.nav_superior{
+  line-height: 20px;
+  padding-left: 20px;
+  position: relative;
+  color: #808080;
+}
+.nav_superior b{
+  color: #08adff;
+}
+.icono_leng{
+  position: absolute;
+  right: 10px;
+  padding-right: 20px;
+  top: 0px;
+  color: #808080;
+}
+
+.icono_leng img{
+  width: 30px;
+  padding: 5px;
+}
+.menu{
+  background-color: #fff;
+  width: 100%;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+#navbar #logo {
+  font-size: 40px;
+  transition: 0.4s;
+  padding-right: 40px;
+}
+#navbar #logo:hover {
+  background: #ffffff;
+}
+
+#logo img {
+  width: 115px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+}
+.iconos {
+  position: absolute!important;
+  right: 10px!important;
+}
+.iconos a:hover{
+
+  background: #fff !important;
+}
+
+#navbar a.active {
+  background-color: #08adff;
+  color: #ffffff!important;
+}
+.navbar-inverse .navbar-nav>.active> a{
+  background-color: #08adff;
+  color: #ffffff!important;
+}
+.navbar-inverse{
+  border-color: transparent;
+}
+
+#navbar-right {
+  float: right;
+}
+.navbar-nav img{
+  line-height:  40px;
+  width: 30px;
+}
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
